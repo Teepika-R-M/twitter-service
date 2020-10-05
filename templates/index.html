@@ -1,0 +1,37 @@
+<html>
+<style>
+label {
+	  width: 200px;
+	    text-align: left;
+	      display: inline-block;
+	        margin-top: 20px;
+		  
+}
+select {
+	  border: 2px solid #333;
+	    display: inline-block;
+	      border-radius: 5px;
+	        width: 200px;
+		  height: 40px;
+		    line-height: 30px;
+		      font-size:14px;
+}
+</style>
+<body>
+	<center>
+	<label><h2> Twitter Service </h2></label>
+	<form action= "{{ url_for('threshold') }}" method="POST">
+		<label for="twitter_operation"><h3>Twitter Operation:<h3></label>
+		             <select name= 'tvalue'>
+				                  <option value="Create a Tweet">Create a Tweet</option>
+						               <option value="Retrieve Tweets">Retrieve Tweets</option>
+							                    <option value="Delete a Tweet">Delete a Tweet</option>
+									                 </select>
+											              <br>
+												                   <br>
+														                <input type="submit" value="Submit" />
+	</form>
+	</center>
+
+</body>
+</html>
